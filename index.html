@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet"
 	  href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link type="text/css" rel="stylesheet"
+	  href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -74,26 +76,7 @@
       color: white;
       }
 
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-      padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-      border: 1px dotted;
-      text-align: center;
-      }
-      .video {
-      /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-      height: 124px;
-      line-height: 124px;
-      }
-      .thermometer, .order, .social {
-      /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-      height: 40px;
-      line-height: 40px;
-      }
-      div.row {
-      border: 1px solid;
-      }
+
     </style>
   </head>
   <body>
@@ -164,6 +147,25 @@
                 </div>
               </div>
 	    </div>
+	  </div>
+	  <div class="span10 offset1">
+	    <!-- Bootstrap progress bar -->
+	    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+	    <div class="thermometer progress active">
+	      <div class="bar bar-success" style="width: 60%;"></div>
+      	      <div class="bar bar-warning" style="width: 40%;"></div>
+	    </div>
+	  </div>
+	  <div class="span6 offset3 order">
+	    <!-- Standard Bootstrap button -->
+	    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+	    <button class="btn btn-success btn-large">Preorder</button>
+	  </div>
+	  <div class="span8 offset2 social">
+	    <!-- Social buttons are not included in default Bootstrap. -->
+	    <!-- See: http://noizwaves.github.io/bootstrap-social-buttons/ -->
+	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	    <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
 	  </div>
 	</div>
       </div>
